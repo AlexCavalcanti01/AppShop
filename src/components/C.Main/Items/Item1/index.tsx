@@ -8,7 +8,7 @@ export const Item1 = () => {
     return (
         <C.Container>
             <C.Title>HEAD Boom PRO Tennis Racquet</C.Title>
-            <C.Value>€280.00</C.Value>
+            <C.Value>€280.000</C.Value>
             <C.Box>
                 <C.Img src={ImgRacquets} />
                 <C.List>
