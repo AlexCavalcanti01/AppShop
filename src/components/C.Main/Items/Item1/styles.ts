@@ -20,7 +20,6 @@ export const Title = styled.div`
     width: 274px;
     height: 20px;
 
-    font-family: 'Clash Display';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -33,7 +32,6 @@ export const Value = styled.div`
     width: 76px;
     height: 20px;
 
-    font-family: 'Clash Display';
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
@@ -67,9 +65,8 @@ export const List = styled.div`
     padding-top: 10px;
 `;
 export const ListName = styled.div`
-    font-family: 'Clash Display';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 16px;
     line-height: 20px;
 
@@ -78,9 +75,8 @@ export const ListName = styled.div`
     color: #FFFFFF;
 `;
 export const ListSize = styled.div`
-    font-family: 'Clash Display';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 16px;
     line-height: 20px;
 
@@ -89,9 +85,8 @@ export const ListSize = styled.div`
     color: #FFFFFF;
 `;
 export const Qty = styled.div`
-    font-family: 'Clash Display';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 16px;
     line-height: 20px;
 

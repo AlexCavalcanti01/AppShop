@@ -5,7 +5,8 @@ interface Props {
 }
 
 export const Container = styled.div<Props>`
-    width: ${p => p.open ? '635px' : '960px'};
+    width: 920px;
+    padding-left: ${p => p.open ? '0px' : '40px'};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,27 +14,22 @@ export const Container = styled.div<Props>`
 
     max-height: 100%;
     overflow-y: scroll ;
+    overflow-x: hidden;
 `;
 
 export const Racquets = styled.div<Props>`
-    width: ${p => p.open ? '580px' : '894px'};
+    width: ${p => p.open ? '580px' : '960px'};
     height: max-content;
-
-    padding-top: 14px;  
-    
 `;
 export const Shoes = styled.div<Props>`
-    width: ${p => p.open ? '580px' : '894px'};
+    width: ${p => p.open ? '580px' : '960px'};
     height: max-content;
-    margin-bottom: 1rem;
-    
 `;
 
 export const Title = styled.h2`
     width: 163px;
     height: 39px;
 
-    font-family: 'Clash Display';
     font-style: normal;
     font-weight: 600;
     font-size: 32px;
@@ -41,9 +37,7 @@ export const Title = styled.h2`
     display: flex;
     align-items: center;
     letter-spacing: 0.05em;
-
     color: #FFFFFF;
-
     padding-bottom: 27px;
 `;
 
@@ -53,17 +47,19 @@ export const Cards = styled.div<Props>`
             display: grid;
             grid-template-columns: 260px 260px;
             column-gap: 54px;
+            padding-bottom: 15px;
         ` : css`
             display: flex;
             gap: 54px;
+            padding-bottom: 15px;
         `
     }
 `;
 export const Card = styled.div`
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     text-align: center;
-
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     border-radius: 20px;
 `;
@@ -72,14 +68,10 @@ export const Img = styled.img`
     height: 287px;
 `;
 export const Text = styled.text`
-    font-family: 'Clash Display';
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 30px;
-
     letter-spacing: 0.05em;
-
     color: #FFFFFF;
 `;
-

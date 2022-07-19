@@ -1,14 +1,16 @@
 import React, { useContext } from "react";
 import * as C from './styles'
 
-import ImgL1 from '../../../../assets/L1.png';
-import ImgL2 from '../../../../assets/L2.png';
-import ImgL3 from '../../../../assets/L3.png';
-import ImgL4 from '../../../../assets/L4.png';
-import ImgL5 from '../../../../assets/L5.png';
-import ImgL6 from '../../../../assets/L6.png';
+import { Link } from "react-router-dom";
 
-import { MyBag } from "../../../../Context/Context";
+import ImgL1 from '../../assets/L1.png';
+import ImgL2 from '../../assets/L2.png';
+import ImgL3 from '../../assets/L3.png';
+import ImgL4 from '../../assets/L4.png';
+import ImgL5 from '../../assets/L5.png';
+import ImgL6 from '../../assets/L6.png';
+
+import { MyBag } from "../../Context/Context";
 
 export const Tennis = () => {
     const {open} = useContext(MyBag);
@@ -17,6 +19,7 @@ export const Tennis = () => {
         <C.Container open={open} >
             <C.Racquets open={open} >
                 <C.Title>Racquets</C.Title>
+                    <Link to='/Racquets/Tour'>
                     <C.Cards open={open}>
                         <C.Card>
                             <C.Img src={ImgL1} />
@@ -31,6 +34,7 @@ export const Tennis = () => {
                             <C.Text>Juniors</C.Text>
                         </C.Card>
                     </C.Cards>
+                    </Link>
             </C.Racquets>
             <C.Shoes open={open} >
                 <C.Title>Shoes</C.Title>

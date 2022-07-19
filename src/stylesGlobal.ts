@@ -1,7 +1,6 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';               
 
 export const GlobalStyle = createGlobalStyle`
-    font-family: Arial, Helvetica, sans-serif;
     html{
         width: 100vw;
         height: 100vh;
@@ -12,6 +11,10 @@ export const GlobalStyle = createGlobalStyle`
 
         background: linear-gradient(235.69deg, #D2ADFF -30.19%, #34678B 92.42%);
         border-radius: 20px;
+
+        a {
+            text-decoration: none;
+        }
         button, img {
             cursor: pointer;
         }
@@ -21,5 +24,6 @@ export const GlobalStyle = createGlobalStyle`
     * {
         margin: 0;
         padding: 0;
+        font-family: 'Clash Display', sans-serif;
     }
 `;

@@ -1,38 +1,23 @@
-import styled, { css } from "styled-components";
-import Rectangle from '../../../assets/Rectangle.png'
+import styled from "styled-components";
 
 interface Props {
     open: boolean;
 }
 
-export const Container = styled.div<Props>`
-    width: 110px;
-    height: 44px;
-
-    background: rgba(34, 34, 36, 0.8);
-
-    ${
-        p => p.open ? css`
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            gap: 30px;
-            padding-right: 12px;
-        ` : css`
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-        `
-    }
-
+export const Container = styled.div`
+    display: flex;
 `;
 
-export const Borsa = styled.img`
+export const Borsa = styled.img<Props>`
     width: 20px;
-    height: 22px;    
+    height: 22px;
+    background-color: ${p => p.open ? '#29292E' : 'none'};
+    padding: 12px 16px;
+    
 `;
 export const User = styled.img`
     width: 19px;
     height: 19px; 
+    
+    padding: 13px 20px;
 `;

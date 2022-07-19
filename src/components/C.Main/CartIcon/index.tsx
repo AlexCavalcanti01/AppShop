@@ -11,16 +11,15 @@ export const CartIcon = () => {
     const { open, MyBagClick } = useContext(MyBag);
 
     return (
-        <>
-            <C.Container open={open}>
-                <C.Borsa 
-                    onClick={() => MyBagClick()} 
-                    src={BorsaImg}
-                />
-                <C.User 
-                    src={UserImg} 
-                />
-            </C.Container>
-        </>
+        <C.Container>
+            <C.Borsa
+                open={open} 
+                onClick={() => MyBagClick()} 
+                src={BorsaImg}
+            />
+            <C.User  
+                src={UserImg} 
+            />
+        </C.Container>
     );
 }

@@ -1,10 +1,12 @@
 import React from 'react';
+import { BrowserRouter } from "react-router-dom";
 
-import styled from 'styled-components';
 import { GlobalStyle } from './stylesGlobal';
 import { Menu } from './components/C.Menu/Menu';
-import { Main } from './components/C.Main/Main';
+import { Router } from './routes';
 import MainContextProvider from './Context/Context';
+
+import styled from 'styled-components';
 
 const Apps = styled.div`
   width: 1280px;
@@ -12,27 +14,24 @@ const Apps = styled.div`
   display: flex;
 
   padding: 90px 80px;
-
-
 * {
   scrollbar-width: thin;
   scrollbar-color: #ffffff25 #222224;
-}
-
-
   
+}
 `;
 
 function App() {
   return (
-    <MainContextProvider>
-      <GlobalStyle />
-        <Apps>  
-          <Menu />
-          <Main />
-        </Apps>
-    </MainContextProvider> 
-      
+    <BrowserRouter>
+      <MainContextProvider>
+        <GlobalStyle />
+          <Apps>  
+            <Menu />
+            <Router />
+          </Apps>
+      </MainContextProvider> 
+    </BrowserRouter>  
   );
 }
 

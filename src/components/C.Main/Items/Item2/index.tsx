@@ -13,8 +13,8 @@ export const Item2 = () => {
                 <C.Img src={ImgShoes} />
                 <C.List>
                     <C.ListName>Colors; BSTE</C.ListName>
-                    <C.ListSize>Size: 43</C.ListSize>
-                    <C.Qty>Qty: 1<C.QtyUnd src={ImgQty} /></C.Qty>
+                    <C.ListSize>Size : 43</C.ListSize>
+                    <C.Qty>Qty : 1<C.QtyUnd src={ImgQty} /></C.Qty>
                 </C.List>
             </C.Box>
         </C.Container>

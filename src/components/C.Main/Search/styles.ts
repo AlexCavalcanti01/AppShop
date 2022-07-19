@@ -5,10 +5,19 @@ export const Container = styled.div`
     height: 44px;
     
     display: flex;
-    justify-content: center;
+
     align-items: center;
 
     background: rgba(34, 34, 36, 0.8);
+`;
+
+export const Area = styled.div`
+    width: 850px;
+    height: 44px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const Busca = styled.button`
