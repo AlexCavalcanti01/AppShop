@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div``;
 
@@ -13,8 +13,17 @@ export const Area = styled.div`
     background: rgba(34, 34, 36, 0.9);
 `;
 
-export const Item = styled.div`
-    padding-left: 36px;
+export const Item = styled.div<Props>`
+    ${
+        p => p.open ? css`
+            padding-left: 26px;
+            overflow-y: scroll;
+            max-height: 100%;
+            height: 800px;
+        ` : css`
+            padding-left: 26px;
+        `
+    }
 `;
 export const ImgBack = styled.img`
     width: 16px;
@@ -41,9 +50,20 @@ export const ImgItem = styled.img`
     height: 426px;
 `;
 
-export const AreaItem = styled.div`
-    display: flex;
-    gap: 10px;
+interface Props {
+    open: boolean;
+}
+
+export const AreaItem = styled.div<Props>`
+    ${
+        p => p.open ? css`
+        display: flex;
+        flex-direction: column;
+        ` : css`
+        display: flex;
+        gap: 10px;
+        `
+    }
 `;
 
 export const AreaDescription = styled.div`
@@ -187,7 +207,7 @@ export const AreaSize = styled.div`
     display: flex;
     gap: 17px;
 `;
-export const Size = styled.div`
+export const Size = styled.button`
     background: rgba(34, 34, 36, 0.8);
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 5px;

@@ -25,11 +25,14 @@ function App() {
   return (
     <BrowserRouter>
       <MainContextProvider>
+
         <GlobalStyle />
+
           <Apps>  
             <Menu />
             <Router />
           </Apps>
+          
       </MainContextProvider> 
     </BrowserRouter>  
   );

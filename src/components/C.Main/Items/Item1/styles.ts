@@ -12,8 +12,7 @@ export const Container = styled.div`
     padding-left: 26px;
     padding-right: 27px;
 
-    background: rgba(34, 34, 36, 0.4);
-    box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
 `;
 
 export const Title = styled.div`
@@ -62,7 +61,7 @@ export const List = styled.div`
     flex-direction: column;
     gap: 10px;
 
-    padding-top: 10px;
+    padding-top: 20px;
 `;
 export const ListName = styled.div`
     font-style: normal;

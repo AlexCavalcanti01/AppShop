@@ -32,7 +32,7 @@ export const Home = styled.img<Props>`
     width: 26px;
     height: 20px;
 
-    border: ${p => p.id === p.idActive ? '1px solid #00EBCF' : '1px solid none'};
+    border: ${p => p.id === p.idActive ? '1px solid #FFFFFF' : '1px solid none'};
 
 `;
 
@@ -45,7 +45,7 @@ export const Shop = styled.img<Props>`
     margin-top: 30px;
     padding: 4px;
 
-    border: ${p => p.id === p.idActive ? '1px solid #00EBCF' : '1px solid none'};
+    border: ${p => p.id === p.idActive ? '1px solid #FFFFFF' : '1px solid none'};
 `;
 
 export const Partner = styled.img<Props>`
@@ -57,7 +57,7 @@ export const Partner = styled.img<Props>`
     margin-top: 31px;
     padding: 3px;
 
-    border: ${p => p.id === p.idActive ? '1px solid #00EBCF' : '1px solid none'};
+    border: ${p => p.id === p.idActive ? '1px solid #FFFFFF' : '1px solid none'};
 `;
 
 export const News = styled.img<Props>`
@@ -69,5 +69,5 @@ export const News = styled.img<Props>`
     border-radius: 50px;
     padding: 12px;
 
-    border: ${p => p.id === p.idActive ? '1px solid #00EBCF' : '1px solid none'};
+    border: ${p => p.id === p.idActive ? '1px solid #FFFFFF' : '1px solid none'};
 `;

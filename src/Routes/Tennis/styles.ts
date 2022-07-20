@@ -5,25 +5,30 @@ interface Props {
 }
 
 export const Container = styled.div<Props>`
-    width: 920px;
-    padding-left: ${p => p.open ? '0px' : '40px'};
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 28px;
-
-    max-height: 100%;
-    overflow-y: scroll ;
-    overflow-x: hidden;
+    ${
+        p => p.open ? css`
+        width: 625px;
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-left: 15px;
+        ` : css`
+        width: 960px;
+        display: flex;
+        flex-direction: column;
+        max-height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        padding-left: 15px;
+        `
+    }
 `;
 
-export const Racquets = styled.div<Props>`
-    width: ${p => p.open ? '580px' : '960px'};
-    height: max-content;
+export const Racquets = styled.div`
 `;
-export const Shoes = styled.div<Props>`
-    width: ${p => p.open ? '580px' : '960px'};
-    height: max-content;
+export const Shoes = styled.div`
 `;
 
 export const Title = styled.h2`
@@ -38,6 +43,8 @@ export const Title = styled.h2`
     align-items: center;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+
+    padding-top: 15px;
     padding-bottom: 27px;
 `;
 

@@ -12,8 +12,7 @@ export const Container = styled.div`
     padding-left: 26px;
     padding-right: 27px;
 
-    background: rgba(34, 34, 36, 0.4);
-    box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.25);
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
 `;
 
 export const Title = styled.div`
@@ -27,6 +26,8 @@ export const Title = styled.div`
     letter-spacing: 0.05em;
 
     color: #FFFFFF;
+
+    padding-top: 50px;
 `;
 export const Value = styled.div`
     width: 76px;
@@ -44,14 +45,13 @@ export const Value = styled.div`
     padding-top: 10px;
 `;
 export const Box = styled.div`
-    padding-top: 15px;
     display: flex;
     gap: 17px;
 `;
 
 export const Img = styled.img`
     width: 120px;
-    height: 120px;
+    height: 140px;
 
     padding-top: 15px;
 `;
@@ -63,7 +63,7 @@ export const List = styled.div`
     flex-direction: column;
     gap: 10px;
 
-    padding-top: 10px;
+    padding-top: 25px;
 `;
 export const ListName = styled.div`
     font-style: normal;

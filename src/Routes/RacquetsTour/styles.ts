@@ -7,7 +7,6 @@ interface Props {
 export const Container = styled.div`
     width: 960px;
     height: 844px;
-    background: rgba(34, 34, 36, 0.9);
 `;
 
 export const Header = styled.div`
@@ -18,6 +17,8 @@ export const Header = styled.div`
 export const Area = styled.div`
     display: flex;
     height: 800px;
+
+    background: rgba(34, 34, 36, 0.9);
 `;
 
 export const Racquets = styled.div<Props>`
@@ -41,6 +42,7 @@ export const Title = styled.h2`
 
     color: #FFFFFF;
 
+    padding-top: 15px;
     padding-bottom: 15px;
 `;
 

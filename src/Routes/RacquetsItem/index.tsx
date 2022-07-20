@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import * as C from './styles';
 import { Link } from "react-router-dom";
 
@@ -12,14 +12,18 @@ import Voltar from '../../assets/Voltar.png';
 import Time from '../../assets/Time.png';
 import Gift from '../../assets/Gift.png';
 
+import { MyBag } from "../../Context/Context";
+
 export const RacquetsItem = () => {
+    const {open} = useContext(MyBag);
+
     return (
         <C.Container>
             <C.Header> <Search /> </C.Header> 
                 <C.Area>
-                    <C.Item>
+                    <C.Item open={open}>
                         <C.ItemText> <Link to='/Racquets/Tour'> <C.ImgBack src={Back} /></Link> Racquets - Tour - Head Boom Pro</C.ItemText>
-                            <C.AreaItem>
+                            <C.AreaItem open={open}>
                                 <C.ImgItem src={Racquets1} />
                                 <C.AreaDescription>
 
@@ -67,7 +71,7 @@ export const RacquetsItem = () => {
                     </C.Item>
                     <MyCart />
                 </C.Area>
-    
+                
         </C.Container>
     );
 }

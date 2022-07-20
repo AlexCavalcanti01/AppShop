@@ -17,14 +17,16 @@ export const Tennis = () => {
 
     return (
         <C.Container open={open} >
-            <C.Racquets open={open} >
+            <C.Racquets>
                 <C.Title>Racquets</C.Title>
-                    <Link to='/Racquets/Tour'>
+                    
                     <C.Cards open={open}>
+                    <Link to='/Racquets/Tour'>
                         <C.Card>
                             <C.Img src={ImgL1} />
                             <C.Text>Tour</C.Text>
                         </C.Card>
+                    </Link>
                         <C.Card>
                             <C.Img src={ImgL2} />
                             <C.Text>Recreational</C.Text>
@@ -34,9 +36,9 @@ export const Tennis = () => {
                             <C.Text>Juniors</C.Text>
                         </C.Card>
                     </C.Cards>
-                    </Link>
+                    
             </C.Racquets>
-            <C.Shoes open={open} >
+            <C.Shoes>
                 <C.Title>Shoes</C.Title>
                     <C.Cards open={open} >
                         <C.Card>

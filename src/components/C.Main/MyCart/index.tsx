@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import * as C from './styles';
+import { Link } from "react-router-dom";
 
 import { MyBag } from "../../../Context/Context";
 import { Item1 } from "../Items/Item1";
@@ -15,8 +16,8 @@ export const MyCart = () => {
         <C.Container open={open} >
             <C.Header><C.HeaderText>My Bag</C.HeaderText></C.Header>
             <C.Items>
-                <Item1 />
-                <Item2 />
+            <Link to='/HeadBoomPro' ><Item1 /></Link>
+                  <Item2 />
             </C.Items>
             
             <C.Summary>

@@ -40,7 +40,8 @@ export const Items = styled.div`
     display: flex;
     flex-direction: column;
 
-    background: rgba(34, 34, 36, 0.4);
+    
+    
     box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.25);
 `;
 
@@ -53,7 +54,7 @@ export const Summary = styled.div`
     justify-content: flex-start;
     gap: 18px;
     
-    background: rgba(34, 34, 36, 0.4);
+    
     box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.25);
 `;
 export const Text = styled.span`
